@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body{
+            background-color: #F6F6F6; 
+            margin: 0;
+            padding: 0; 
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 60%;
+            height:900px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3%;
+        }
+        .brand-section{
+           background-color: #aa1f34;
+           padding: 10px 20px;
+        }
+        .logo{
+            width: 50%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 21px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #f2f2f2;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: left;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }	
+</style>
+</head>
+<body>
+    <div class="container"><br>
+        <div class="brand-section"><center><h2 class="text-black"><u>FEE RECEIPT</h2></u></center>
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="text-white"> </h2>
+                </div>
+                <div class="col-6">
+                    <div class="company-details">
+                        <p class="text-white">HealthTech hospital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">     <br>             
+                    <h3><p class="sub-heading">Patient's first name &nbsp; : &nbsp;{{first_name}}</p>
+                    <p class="sub-heading">Patient's second name &nbsp;: &nbsp;{{last_name}} 
+                   </p>
+                   <p class="sub-heading">Doctor's name &nbsp; : &nbsp;{{doctor_firstname}}&nbsp;{{doctor_lastname}} </p>  
+                    <p class="sub-heading">Department &nbsp; &nbsp; : &nbsp; {{doctor_department}}</p>                  
+ <p class="sub-heading">DATE  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;{{date}}<span id="date"></span></p></h3> </script></div>
+  
+ <div class="col-6">
+    <b><i><h3>
+ </div></div></div> 		
+<div class="body-section"><h1 class="heading"><center><u><i>RECEIPT</i></u></center></h1>
+<h3 class="sub-heading"><br>
+A payment of Rs. {{amount}} has to be paid by your account.</h3>    <br><br>   
+<table class="table-bordered">
+             <head>
+                        <th>Description of charges</th>
+                        <th class="w-20">Rs.</th>
+                     </tr>
+                 </thead>
+             <tbody>
+                    <td><p align='center'>Total of {{amount}} has to be paid either in online/offline mode </p></td>
+                        <td><p><center> {{amount}} </p></td>
+             </tr>
+ <thead>
+ <td><p><b><h3><center>Total</td></p></b></h3>
+ <td><p><b><h3><center>Amount</center></td></p></b></h3></tbody></table></center></tr><br><br>
+ <h3 class="heading"> Balance Payable &nbsp; : {{amount}}
+ </h3>      
+</br><div>     
+<p>This is computer generated Receipt. No Signature required. Thanking you for payment.</p> </div></div>
+<div class="body-section">
+            <p>For more information visit your website
+            </p>
+        </div>              
+</body>
+</html>
